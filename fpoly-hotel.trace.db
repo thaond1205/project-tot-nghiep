@@ -1,0 +1,1097 @@
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:34:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:35:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:38:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:38:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:50:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_CHECKIN_CHECKOUTS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_IN DATE, DATE_OUT DATE, ID_BOOKING BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_checkin_checkouts (id bigint not null auto_increment, date_in date, date_out date, id_booking bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKING_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ID_BOOKING BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table booking_utilities (id bigint not null auto_increment, description varchar(255), id_booking bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BOOKINGS (ID BIGINT NOT NULL AUTO_INCREMENT, CREATE_DATE DATE, DEPOSIT DOUBLE PRECISION NOT NULL, DEPOSIT_PRICE DOUBLE PRECISION NOT NULL, DISCOUNT DOUBLE PRECISION NOT NULL, EMAIL VARCHAR(255), FULL_NAME VARCHAR(255), ID_CARD INTEGER NOT NULL, ID_HOTEL BIGINT, ID_USER BIGINT, ID_VOUCHER BIGINT, PHONE VARCHAR(255), STATUS VARCHAR(255), TOTAL_PEOPLES INTEGER, TOTAL_PRICE DOUBLE PRECISION, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table bookings (id bigint not null auto_increment, create_date date, deposit double precision not null, deposit_price double precision not null, discount double precision not null, email varchar(255), full_name varchar(255), id_card integer not null, id_hotel bigint, id_user bigint, id_voucher bigint, phone varchar(255), status varchar(255), total_peoples integer, total_price double precision, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DETAIL_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, PRICE DOUBLE PRECISION, QUANTITY INTEGER, ID_TYPE_ROOM BIGINT, ID_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table detail_utilities (id bigint not null auto_increment, price double precision, quantity integer, id_type_room bigint, id_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HIBERNATE_SEQUENCE (NEXT_VAL BIGINT) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hibernate_sequence (next_val bigint) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HIBERNATE_SEQUENCE" not found; SQL statement:
+insert into hibernate_sequence values ( 1 ) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE HOTELS (ID BIGINT NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CITY VARCHAR(255), IMAGES VARCHAR(255), IS_ENABLED INTEGER, NAME VARCHAR(50), TOTAL_NUMBER_ROOM INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table hotels (id bigint not null auto_increment, address varchar(255), city varchar(255), images varchar(255), is_enabled integer, name varchar(50), total_number_room integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REFRESHTOKEN (ID BIGINT NOT NULL, EXPIRY_DATE DATETIME NOT NULL, TOKEN VARCHAR(255) NOT NULL, USER_ID INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table refreshtoken (id bigint not null, expiry_date datetime not null, token varchar(255) not null, user_id integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROLES (ID INTEGER NOT NULL AUTO_INCREMENT, NAME VARCHAR(20), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table roles (id integer not null auto_increment, name varchar(20), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), ENABLED BIT, NUMBER_ROOM VARCHAR(255), STATUS VARCHAR(255), ID_HOTEL BIGINT, ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table rooms (id bigint not null auto_increment, description varchar(255), enabled bit, number_room varchar(255), status varchar(255), id_hotel bigint, id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TRANSACTION_INFOS (ID BIGINT NOT NULL AUTO_INCREMENT, DATE_RELEASE DATE, DESCRIPTION VARCHAR(255), STATUS VARCHAR(255), TOTAL_PRICE DOUBLE PRECISION NOT NULL, ID_BOOKING BIGINT, ID_CREATOR INTEGER, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table transaction_infos (id bigint not null auto_increment, date_release date, description varchar(255), status varchar(255), total_price double precision not null, id_booking bigint, id_creator integer, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOMS (ID BIGINT NOT NULL AUTO_INCREMENT, CAPACITY INTEGER NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRICE DOUBLE PRECISION NOT NULL, SIZE DOUBLE PRECISION NOT NULL, STATUS VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_rooms (id bigint not null auto_increment, capacity integer not null, description varchar(255), name varchar(255), price double precision not null, size double precision not null, status varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, TYPE_UTILITY_NAME VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_utilities (id bigint not null auto_increment, type_utility_name varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE TYPE_ROOM_IMAGES (ID INTEGER NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), ID_TYPE_ROOM BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table type_room_images (id integer not null auto_increment, image varchar(255), id_type_room bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER_ROLES (USER_ID INTEGER NOT NULL, ROLE_ID INTEGER NOT NULL, PRIMARY KEY (USER_ID, ROLE_ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID INTEGER NOT NULL AUTO_INCREMENT, ADDRESS VARCHAR(255), CCCD VARCHAR(255), DATE_OF_BIRTH DATE, EMAIL VARCHAR(255), ENABLED INTEGER, FIRST_NAME VARCHAR(255), ID_CREATOR INTEGER, IMAGE VARCHAR(255), LAST_NAME VARCHAR(255), PASSWORD VARCHAR(255), PHONE VARCHAR(255), SEX INTEGER, STATUS INTEGER, USERNAME VARCHAR(255), ID_HOTEL BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id integer not null auto_increment, address varchar(255), cccd varchar(255), date_of_birth date, email varchar(255), enabled integer, first_name varchar(255), id_creator integer, image varchar(255), last_name varchar(255), password varchar(255), phone varchar(255), sex integer, status integer, username varchar(255), id_hotel bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE UTILITIES (ID BIGINT NOT NULL AUTO_INCREMENT, IMAGE VARCHAR(255), UTILITY_NAME VARCHAR(255), TYPE_UTILITY BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table utilities (id bigint not null auto_increment, image varchar(255), utility_name varchar(255), type_utility bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOUCHERS (ID BIGINT NOT NULL AUTO_INCREMENT, CODE VARCHAR(255), DESCRIPTION VARCHAR(255), END_TIME DATETIME, NAME VARCHAR(255), START_TIME DATETIME, STATUS INTEGER, ID_USER INTEGER, ID_VOUCHER_TYPE BIGINT, PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vouchers (id bigint not null auto_increment, code varchar(255), description varchar(255), end_time datetime, name varchar(255), start_time datetime, status integer, id_user integer, id_voucher_type bigint, primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE VOURCHER_TYPES (ID BIGINT NOT NULL AUTO_INCREMENT, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), TYPE VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table vourcher_types (id bigint not null auto_increment, description varchar(255), name varchar(255), type varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken drop index UK_or156wbneyk8noo4jstv55ii3 [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint UK_or156wbneyk8noo4jstv55ii3 unique (token) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UKr43af9ap4edm43mmtq01oddj6 [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FK2agqk3an5xmeegcn85uib3vml foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_CHECKIN_CHECKOUTS" not found; SQL statement:
+alter table booking_checkin_checkouts add constraint FKbv8j3apjyhei4vmjm70x20lxj foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FKd7wi1gksojms2c2h4pfimtrb0 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BOOKING_UTILITIES" not found; SQL statement:
+alter table booking_utilities add constraint FK8mle3vmwwnp50mlwyln61ygrw foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FKk45hs73mfbawcbv76sviqfta2 foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DETAIL_UTILITIES" not found; SQL statement:
+alter table detail_utilities add constraint FK2s51efp4cjbbo07ouo2hekkx foreign key (id_utility) references utilities (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESHTOKEN" not found; SQL statement:
+alter table refreshtoken add constraint FKa652xrdji49m4isx38pp4p80p foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FK3ljjrvbo7pw225qv3hx60pcx8 foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROOMS" not found; SQL statement:
+alter table rooms add constraint FKedno1d66qsxgkyla1ojxlv32x foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FKr3i2yi7swuiba7t0b9ieqhpt6 foreign key (id_booking) references bookings (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTION_INFOS" not found; SQL statement:
+alter table transaction_infos add constraint FK99ra7rave8wv99qr28lgp5rvv foreign key (id_creator) references users (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TYPE_ROOM_IMAGES" not found; SQL statement:
+alter table type_room_images add constraint FK7xkhf4i2emeb1657g3atj1mbg foreign key (id_type_room) references type_rooms (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_ROLES" not found; SQL statement:
+alter table user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint FKiggrvuyj1lrgote05thrrb8wl foreign key (id_hotel) references hotels (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "UTILITIES" not found; SQL statement:
+alter table utilities add constraint FKg358gpke0puvqbkx9ld83abkc foreign key (type_utility) references type_utilities (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKq38l8lt4od1wnf1s0s2hg5g9r foreign key (id_user) references users (id) [42102-200]
+2021-11-07 13:55:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VOUCHERS" not found; SQL statement:
+alter table vouchers add constraint FKfewcl2suwsqccegx0378tgul3 foreign key (id_voucher_type) references vourcher_types (id) [42102-200]
+2021-11-07 23:07:24 jdbc[35]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
+2021-11-08 00:06:42 jdbc[56]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
+2021-11-08 01:05:54 jdbc[77]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.fpt.hotel.security.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
+2021-11-08 16:27:25 jdbc[77]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
+2021-11-08 18:55:08 jdbc[127]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
+2021-11-08 18:55:08 jdbc[127]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 18 more
