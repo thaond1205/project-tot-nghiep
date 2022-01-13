@@ -56,6 +56,18 @@ public class TypeRoomServiceImpl implements ITypeRoomService {
         )).collect(Collectors.toList());
     }
 
+    @Override
+    public TypeRoomResponse update(String folder, String typeRoom, List<MultipartFile> files) throws JsonProcessingException {
+        Type_room typeRoomSave = getTypeRoom(typeRoom);
+
+        List<TypeRoomImage> typeRoomImages = getTypeRoomImages(folder, files, typeRoomSave);
+        if(!typeRoomImages.isEmpty()){
+            typeRoomSave.setTypeRoomImages(typeRoomImages);
+        }
+        Type_room type_room = typeRoomRepository.save(typeRoomSave);
+        return modelMapper.map(type_room, TypeRoomResponse.class );
+    }
+
     // lưu typeRoomImage
     private List<TypeRoomImage> getTypeRoomImages(String folder, List<MultipartFile> files, Type_room typeRoomSave) {
         // tạo đối tượng TypeRoomImage

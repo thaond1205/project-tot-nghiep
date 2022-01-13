@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
+
 
 @RestController
 @RequestMapping("api/user/booking")
@@ -22,7 +24,7 @@ public class BookingController {
     BookingService bookingService;
 
     @PostMapping()
-    public ResponseEntity<?> create(@RequestBody BookingRequest data) {
+    public ResponseEntity<?> create(@RequestBody BookingRequest data) throws MessagingException {
 
         BookingResponse booking = bookingService.create(data);
 

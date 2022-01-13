@@ -2,8 +2,10 @@ package com.fpt.hotel.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "rooms")
@@ -30,4 +32,9 @@ public class Room {
     @ManyToOne
     @JoinColumn(name = "id_hotel")
     private Hotel hotel;
+
+    @OneToMany(mappedBy = "room")
+    @Cascade( org.hibernate.annotations.CascadeType.ALL )
+    List<RoomUtility> utilityList;
+
 }

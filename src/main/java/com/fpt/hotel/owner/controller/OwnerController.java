@@ -86,7 +86,7 @@ public class OwnerController {
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject("Ok", "Chuyển cơ sở thành công", update));
     }
 
-    @PreAuthorize("hasRole('ADMIN') or hasRole('STAFF')")
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/user/{id}")
     public ResponseEntity<ResponseObject> getUserById(@PathVariable("id") Integer id) {
 
@@ -98,7 +98,7 @@ public class OwnerController {
                 .body(new ResponseObject("ok", "Trả về dữ liệu user thành công", ownerResponse));
     }
 
-    @PreAuthorize("hasRole('ADMIN') or hasRole('STAFF')")
+    @PreAuthorize("isAuthenticated()")
     @PutMapping(value = "user", consumes = {MediaType.APPLICATION_JSON_VALUE,
             MediaType.MULTIPART_FORM_DATA_VALUE})
     public ResponseEntity<ResponseObject>
@@ -113,6 +113,22 @@ public class OwnerController {
         }
 
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject("Ok", "Cập nhật user thành công", update));
+    }
+
+    @PreAuthorize("isAuthenticated()")
+    @PutMapping("user/change-password/{id}")
+    public ResponseEntity<ResponseObject> changePassword(@PathVariable("id") Integer idUser,
+                                                         @RequestParam("oldPassword") String oldPassword ,
+                                                         @RequestParam("newPassword") String newPassword
+    ) {
+        OwnerResponse changePassword = ownerService.changePassword(idUser , oldPassword, newPassword);
+
+        if (changePassword == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(new ResponseObject(HttpStatus.BAD_REQUEST.name(), "Mật khẩu cũ không đúng", null));
+        }
+
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject(HttpStatus.OK.name(), "Đổi mật khẩu thành công", changePassword));
     }
 
 

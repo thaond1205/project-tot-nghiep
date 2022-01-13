@@ -21,4 +21,6 @@ public interface OwnerService {
 
     OwnerResponse updateUser(String user , List<MultipartFile> files);
 
+    OwnerResponse changePassword(Integer idUser , String oldPassword , String newPassword);
+
 }

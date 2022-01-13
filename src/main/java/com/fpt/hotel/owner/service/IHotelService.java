@@ -12,9 +12,10 @@ public interface IHotelService {
 
     List<HotelResponse> findAllHotels();
 
-    Hotel createHotel(String folder, String hotel, List<MultipartFile>  files);
 
-//    Hotel updateHotel(Long id ,String folder, String hotel, List<MultipartFile>  files);
+    HotelResponse createHotel(String folder, String hotel, List<MultipartFile>  files);
+
+    HotelResponse updateHotel(Long id ,String folder, String hotel, List<MultipartFile>  files);
 
     HotelResponse findById(Long id);
 

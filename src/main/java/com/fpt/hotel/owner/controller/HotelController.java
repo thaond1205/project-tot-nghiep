@@ -31,7 +31,6 @@ public class HotelController {
                 new ResponseObject(HttpStatus.OK.toString(), "Hiển thi tất cả các cơ sở!", hotelService.findAllHotels())
         );
     }
-
     @GetMapping("{id}")
     public ResponseEntity<ResponseObject> findByHotel(@PathVariable("id") Long id) {
         HotelResponse hotelResponse = hotelService.findById(id);
@@ -51,7 +50,7 @@ public class HotelController {
     public ResponseEntity<ResponseObject> createHotel(@PathVariable("folder") String folder, @RequestPart("hotel") String hotel,
                                                       @RequestPart(name = "file", required = false) List<MultipartFile> files) {
 
-        Hotel newHotel = hotelService.createHotel(folder, hotel, files);
+        HotelResponse newHotel = hotelService.createHotel(folder, hotel, files);
         if (newHotel != null) {
             return ResponseEntity.status(HttpStatus.OK).body(
                     new ResponseObject(HttpStatus.OK.toString(), "Tạo mới cơ sở hotel thành công!", newHotel)
@@ -63,23 +62,23 @@ public class HotelController {
         );
     }
 
-//    @PreAuthorize("hasRole('ADMIN')")
-//    @PutMapping(value = "{folder}/{id}", consumes = {MediaType.APPLICATION_JSON_VALUE,
-//            MediaType.MULTIPART_FORM_DATA_VALUE})
-//    public ResponseEntity<ResponseObject> updateHotel(@PathVariable("id") Long id, @PathVariable("folder") String folder, @RequestPart("hotel") String hotel,
-//                                                      @RequestPart(name = "file", required = false) List<MultipartFile> files) {
-//
-//        Hotel newHotel = hotelService.updateHotel(id, folder, hotel, files);
-//        if (newHotel != null) {
-//            return ResponseEntity.status(HttpStatus.OK).body(
-//                    new ResponseObject(HttpStatus.OK.toString(), "Cập nhật cơ sở thành công!", newHotel)
-//            );
-//        }
-//
-//        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
-//                new ResponseObject(HttpStatus.BAD_REQUEST.toString(), "Cập nhật cơ sở thất bại!", newHotel)
-//        );
-//    }
+    @PreAuthorize("hasRole('ADMIN')")
+    @PutMapping(value = "{folder}/{id}", consumes = {MediaType.APPLICATION_JSON_VALUE,
+            MediaType.MULTIPART_FORM_DATA_VALUE})
+    public ResponseEntity<ResponseObject> updateHotel(@PathVariable("id") Long id, @PathVariable("folder") String folder, @RequestPart("hotel") String hotel,
+                                                      @RequestPart(name = "file", required = false) List<MultipartFile> files) {
+
+        HotelResponse newHotel = hotelService.updateHotel(id, folder, hotel, files);
+        if (newHotel != null) {
+            return ResponseEntity.status(HttpStatus.OK).body(
+                    new ResponseObject(HttpStatus.OK.toString(), "Cập nhật cơ sở thành công!", newHotel)
+            );
+        }
+
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+                new ResponseObject(HttpStatus.BAD_REQUEST.toString(), "Cập nhật cơ sở thất bại!", newHotel)
+        );
+    }
 
     @PutMapping("{id}")
     public ResponseEntity<ResponseObject> updateIsEnabled(@PathVariable("id") Long id) {

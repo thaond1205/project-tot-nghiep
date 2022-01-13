@@ -8,6 +8,19 @@ import lombok.Setter;
 public class TransactionRequest {
 
     private Integer id_creator;
-    private Long id_hotel;
-    private Long id_user;
+
+    private Long idBooking;
+
+    private Double totalPrice;
+
+    private String status;
+
+    private String imageCmnd;
+
+    private boolean isCostsIncurred;
+
+    private String nameCostsIncurred;
+
+    private Double priceCostsIncurred;
+
 }

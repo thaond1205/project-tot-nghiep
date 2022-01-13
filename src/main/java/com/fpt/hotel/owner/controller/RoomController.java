@@ -22,8 +22,9 @@ public class RoomController {
     IRoomService roomService;
 
     @GetMapping
-    public ResponseEntity<ResponseObject> findAllRoom(@RequestParam("id") Long id) {
-        List<RoomResponse> roomDTOList = roomService.findAll(id);
+    public ResponseEntity<ResponseObject> findAllRoom(@RequestParam("idHotel") Long idHotel,
+                                                      @RequestParam(value = "idTypeRoom" ,required = false) Long idTypeRoom) {
+        List<RoomResponse> roomDTOList = roomService.findAll(idHotel , idTypeRoom);
         if (roomDTOList.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
                     new ResponseObject(HttpStatus.NOT_FOUND.toString(), "Không có phòng nào!", roomDTOList)
@@ -44,6 +45,26 @@ public class RoomController {
         }
         return ResponseEntity.status(HttpStatus.OK).body(
                 new ResponseObject(HttpStatus.OK.toString(), "Thêm phòng thành công!", roomDTO)
+        );
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<ResponseObject> updateEnabled(@PathVariable("id") Long idRoom) {
+        RoomResponse roomDTO = roomService.updateEnabled(idRoom);
+        if (roomDTO == null) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
+                    new ResponseObject(HttpStatus.BAD_REQUEST.toString(), "Khóa thất bại!", roomDTO)
+            );
+        }
+
+        String lockRoom = "Khóa phòng " + roomDTO.getNumberRoom().toUpperCase() + " thành công!";
+
+        String openRoom = "Mở khóa phòng " + roomDTO.getNumberRoom().toUpperCase() + " thành công!";
+
+        String message = roomDTO.getEnabled()  ? openRoom : lockRoom;
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                new ResponseObject(HttpStatus.OK.toString(), message, roomDTO)
         );
     }
 }

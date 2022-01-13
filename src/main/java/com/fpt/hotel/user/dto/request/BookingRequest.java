@@ -27,11 +27,7 @@ public class BookingRequest {
 
     private double deposit;
 
-    private int id_card;
-
     private String status;
-
-    private double discount;
 
     private Long id_user;
 
@@ -44,4 +40,8 @@ public class BookingRequest {
     private Double totalPrice;
 
     private Integer totalPeoples;
+
+    private Integer tongNgay;
+
+    private Integer tongSoPhong;
 }

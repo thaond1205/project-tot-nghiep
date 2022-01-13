@@ -39,5 +39,5 @@ public class Type_room {
     private List<TypeRoomImage> typeRoomImages;
 
     @OneToMany(mappedBy = "typeRoom")
-    private List<DetailUtility> detailUtilities;
+    private List<HotelTypeRoom> hotelTypeRooms;
 }

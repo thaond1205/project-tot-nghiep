@@ -41,4 +41,15 @@ public class TypeRoomController {
 
         return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject("Ok", "Thêm loại phòng thành công", typeRoomResp));
     }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PutMapping(value = "{folder}", consumes = {MediaType.APPLICATION_JSON_VALUE,
+            MediaType.MULTIPART_FORM_DATA_VALUE})
+    public ResponseEntity<ResponseObject> update(@PathVariable("folder") String folder, @RequestPart("typeRoom") String typeRoom,
+                                                 @RequestPart(name = "file", required = false) List<MultipartFile> files) throws JsonProcessingException {
+
+        TypeRoomResponse typeRoomResp = typeRoomService.update(folder, typeRoom, files);
+
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseObject("Ok", "Cập nhật loại phòng thành công", typeRoomResp));
+    }
 }

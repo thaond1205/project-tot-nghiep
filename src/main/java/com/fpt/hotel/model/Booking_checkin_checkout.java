@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 
 @Getter
@@ -22,8 +22,9 @@ public class Booking_checkin_checkout {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Temporal(TemporalType.DATE)
     private Date date_in;
-
+    @Temporal(TemporalType.DATE)
     private Date date_out;
 
     @ManyToOne

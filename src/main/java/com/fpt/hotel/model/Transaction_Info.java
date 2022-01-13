@@ -28,13 +28,15 @@ public class Transaction_Info {
 
     private double total_price;
 
+    private Double depositPrice;
+
     @ManyToOne
     @JoinColumn(name = "id_booking")
-    private Booking id_booking;
+    private Booking booking;
 
     @ManyToOne
     @JoinColumn(name = "id_creator")
-    private User id_creator;
+    private User user;
 
     private String status;
 

@@ -23,5 +23,5 @@ public class TypeRoomResponse {
 
     private String status;
 
-    List<TypeRoomImageResponse>  typeRoomImages;
+    List<TypeRoomImageResponse> typeRoomImages;
 }

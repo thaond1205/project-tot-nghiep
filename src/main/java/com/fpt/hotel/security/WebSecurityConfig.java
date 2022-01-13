@@ -71,7 +71,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/webjars/**",
                 "/h2-console/**",
                 "/api/owner/hotels/**",
-                "/api/owner/typerooms/**").permitAll()
+                "/api/owner/typerooms/**",
+                "/api/owner/hotel-type-room/**",
+                "/pay",
+                "/api/user/comment/**",
+                "/api/guest/code-bookings",
+                "/thong-tin-thanh-toan").permitAll()
                 .antMatchers("/api/test/**" , "/h2-console/**").permitAll()
 
 

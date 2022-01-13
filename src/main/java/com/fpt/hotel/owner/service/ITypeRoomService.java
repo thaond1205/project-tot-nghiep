@@ -13,4 +13,6 @@ public interface ITypeRoomService {
     TypeRoomResponse save(String folder, String typeRoom, List<MultipartFile> files) throws JsonProcessingException;
 
     List<TypeRoomResponse> findAll();
+
+    TypeRoomResponse update(String folder, String typeRoom, List<MultipartFile> files) throws JsonProcessingException;
 }

@@ -3,6 +3,8 @@ package com.fpt.hotel.owner.dto.request;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 public class HotelRequest {
@@ -13,4 +15,6 @@ public class HotelRequest {
     private Integer totalNumberRoom;
     private Integer isEnabled;
     private String images;
+
+
 }

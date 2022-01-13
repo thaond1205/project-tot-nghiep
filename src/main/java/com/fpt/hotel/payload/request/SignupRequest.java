@@ -11,7 +11,7 @@ import javax.validation.constraints.*;
 @Setter
 public class SignupRequest {
     @NotBlank
-    @Size(min = 3, max = 20)
+    @Size(min = 6, max = 20 , message = "Tên tài khoản tối thiểu phải 6 ký tự hoặc tối đa bằng 20 ký tự")
     private String username;
  
     @NotBlank
@@ -21,7 +21,7 @@ public class SignupRequest {
     private String email;
     
     @NotBlank
-    @Size(min = 6, max = 40)
+    @Size(min = 6, max = 40, message = "Mật khẩu tối thiểu phải 6 ký tự hoặc tối đa bằng 40 ký tự")
     private String password;
   
 }

@@ -1,6 +1,7 @@
 package com.fpt.hotel.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -24,7 +25,6 @@ public class Hotel {
     private String name;
     private String city;
     private String address;
-    private Integer totalNumberRoom;
     private String images;
 
     private Integer isEnabled;
@@ -34,5 +34,12 @@ public class Hotel {
 
     @OneToMany(mappedBy = "hotel")
     private List<User> users;
+
+    @OneToMany(mappedBy = "hotel")
+    private List<HotelTypeRoom> hotelTypeRooms;
+
+    @OneToMany(mappedBy = "hotels",cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Comment> comments;
 
 }

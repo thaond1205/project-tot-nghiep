@@ -140,20 +140,15 @@ public class OwnerServiceImpl implements OwnerService {
             user = userRepository.findById(userJson.getId()).get();
             user.setAddress(userJson.getAddress());
             user.setDate_of_birth(userJson.getDate_of_birth());
-
+            user.setFirst_name(userJson.getFirst_name());
+            user.setLast_name(userJson.getLast_name());
             String fileName = "";
             if (files != null) {
                 String folder = "image_user";
                 List<String> fileLists = fileService.save(folder, files);
                 fileName = fileLists.get(0);
-                System.out.println(fileName);
-//
-//                if(fileName != ""){
-//                    fileService.delete(folder, user.getImage());
-//                }
             }
-
-            user.setImage(fileName);
+            user.setImage(fileName.equalsIgnoreCase("") ? user.getImage() : fileName);
 
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
@@ -161,4 +156,21 @@ public class OwnerServiceImpl implements OwnerService {
         return modelMapper.map(userRepository.save(user), OwnerResponse.class);
     }
 
+    @Autowired
+    PasswordEncoder passwordEncoder;
+
+    @Override
+    public OwnerResponse changePassword(Integer idUser, String oldPassword , String newPassword) {
+        Optional<User> userOptional = userRepository.findById(idUser);
+        User newUser = null;
+        if(userOptional.isEmpty()){
+            return null;
+        }
+        User user = userOptional.get();
+        if(passwordEncoder.matches(oldPassword , user.getPassword())){
+            user.setPassword(passwordEncoder.encode(newPassword));
+            newUser = userRepository.save(user);
+        }
+        return newUser != null ?  modelMapper.map(newUser, OwnerResponse.class) : null;
+    }
 }

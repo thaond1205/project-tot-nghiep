@@ -2,7 +2,6 @@ package com.fpt.hotel.owner.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fpt.hotel.model.Hotel;
-import com.fpt.hotel.model.Room;
 import com.fpt.hotel.owner.dto.request.HotelRequest;
 import com.fpt.hotel.owner.dto.response.HotelResponse;
 import com.fpt.hotel.owner.service.IHotelService;
@@ -43,7 +42,7 @@ public class HotelServiceImpl implements IHotelService {
     }
 
     @Override
-    public Hotel createHotel(String folder, String hotel, List<MultipartFile> files) {
+    public HotelResponse createHotel(String folder, String hotel, List<MultipartFile> files) {
         Hotel hotelJson = new Hotel();
         try {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -66,50 +65,40 @@ public class HotelServiceImpl implements IHotelService {
             throw new RuntimeException(e.getMessage());
         }
 
-        Hotel newHotel = hotelRepository.save(hotelJson);
-        if(newHotel.getTotalNumberRoom() != 0){
-            for (int i = 0; i < newHotel.getTotalNumberRoom(); i++) {
-                Room room = new Room();
-                room.setEnabled(true);
-                String numberRoom = String.format("%03d", i + 1);
-                room.setNumberRoom(numberRoom);
-                room.setHotel(newHotel);
-                room.setStatus("Còn trống");
-                roomRepository.save(room);
-            }
-        }
-        return newHotel;
+       return modelMapper.map( hotelRepository.save(hotelJson) , HotelResponse.class);
+
     }
 
-//    @Override
-//    public Hotel updateHotel(Long id, String folder, String hotel, List<MultipartFile> files) {
-//        Hotel hotelOld = hotelRepository.findById(id).get();
-//        Hotel hotelJson = new Hotel();
-//        try {
-//            ObjectMapper objectMapper = new ObjectMapper();
-//            hotelJson = objectMapper.readValue(hotel, Hotel.class);
-//
-//            // lấy id cũ để cập nhật
-//            hotelJson.setId(hotelOld.getId());
-//
-//            String image = "";
-//            if (files == null) {
-//                image = hotelOld.getImages();
-//            } else {
-//                List<String> fileLists = fileManagerService.save(folder, files);
-//                String fileName =  String.join("," , fileLists);
-//                fileManagerService.delete(folder, image);
-//                image = fileName;
-//            }
-//
-//            hotelJson.setImages(image);
-//
-//        } catch (Exception e) {
-//            throw new RuntimeException(e.getMessage());
-//        }
-//
-//        return hotelRepository.save(hotelJson);
-//    }
+    @Override
+    public HotelResponse updateHotel(Long id, String folder, String hotel, List<MultipartFile> files) {
+        Hotel hotelOld = hotelRepository.findById(id).get();
+        Hotel hotelJson = new Hotel();
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            hotelJson = objectMapper.readValue(hotel, Hotel.class);
+
+            // lấy id cũ để cập nhật
+            hotelJson.setId(hotelOld.getId());
+
+            String image = "";
+            System.out.println(files);
+            if (files == null) {
+                image = hotelOld.getImages();
+            } else {
+                List<String> fileLists = fileManagerService.save(folder, files);
+                String fileName =  String.join("," , fileLists);
+                fileManagerService.delete(folder, image);
+                image = fileName;
+            }
+
+            hotelJson.setImages(image);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e.getMessage());
+        }
+
+        return modelMapper.map( hotelRepository.save(hotelJson) , HotelResponse.class);
+    }
 
     @Override
     public HotelResponse findById(Long id) {

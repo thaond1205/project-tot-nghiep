@@ -12,11 +12,7 @@ public class HotelResponse {
     private String name;
     private String city;
     private String address;
-    private Integer totalNumberRoom;
     private String images;
-
     private Integer isEnabled;
-
-    private List<RoomResponse> rooms;
 
 }
